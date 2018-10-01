@@ -1,0 +1,47 @@
+﻿<%@ Master Language="VB" CodeFile="Master.master.vb" Inherits="Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title></title>
+    <link href="css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/hover.css" rel="stylesheet" media="all">
+
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="js/bootstrap.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/npm.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>  
+    <asp:ContentPlaceHolder id="headContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<header>
+        <div class="w3-title-wrap">
+            <h1><span class="red">W3</span>TRENDS</h1>
+            <h2>Design - Development - Marketing</h2>
+        </div>
+    </header> 
+    <asp:ContentPlaceHolder id="bodyContent" runat="server">
+    
+    </asp:ContentPlaceHolder>
+
+    <footer>
+        <div class="footer-logo-wrap">
+            <h2 class="text-center"><span class="red">W3</span> Trends</h2>
+            <h4 class="text-center">Design - Development - Marketing</h4>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+﻿.header-navigation {
+    height: 40px;
+}
+
+#primary_nav_wrap {
+    /*margin-top:15px*/
+}
+
+    #primary_nav_wrap ul {
+        list-style: none;
+        position: relative;
+        float: right;
+        margin: 0;
+        padding: 0;
+        transition: all 0.1s ease;
+    }
+
+        #primary_nav_wrap ul a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 18px;
+            padding: 12px 16px;
+            font-weight: 600;
+        }
+
+        #primary_nav_wrap ul li {
+            position: relative;
+            float: left;
+            margin: 0;
+            padding: 0;
+            transition: all 0.05s ease;
+        }
+
+
+
+            #primary_nav_wrap ul li.current-menu-item {
+                background: #ddd
+            }
+
+            #primary_nav_wrap ul li:hover {
+                background: #1ba9be;
+            }
+
+        #primary_nav_wrap ul ul {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #353947;
+            padding: 0;
+            z-index: 9999;
+            opacity: 0;
+            visibility: hidden;
+            display: none;
+            padding: 6px 0px;
+        }
+
+
+            #primary_nav_wrap ul ul > li.has-children > a {
+                position: relative;
+            }
+
+                #primary_nav_wrap ul ul > li.has-children > a:after {
+                    content: "\F107";
+                    font-family: FontAwesome;
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    font-size: 20px;
+                }
+
+            #primary_nav_wrap ul ul li {
+                float: none;
+                width: 200px;
+            }
+
+            #primary_nav_wrap ul ul a {
+                line-height: 120%;
+                padding: 6px 12px;
+                font-size: 16px;
+                text-align: left;
+            }
+
+            #primary_nav_wrap ul ul li:hover {
+                background: #1ba9be;
+            }
+
+                #primary_nav_wrap ul ul li:hover a {
+                    color: #fff;
+                }
+
+            #primary_nav_wrap ul ul ul {
+                top: 0;
+                left: 100%
+            }
+
+        #primary_nav_wrap ul li:hover > ul {
+            visibility: visible;
+            opacity: 1;
+            display: block;
+        }
+
+.macro-block {
+    width: 335px;
+}
+
+.macro-menu {
+    width: 100% !important;
+}
+
+    .macro-menu:hover {
+        background-color: transparent !important;
+    }
+
+    .macro-menu ul.magazine-alt {
+        visibility: visible !important;
+        opacity: 1 !important;
+        position: static !important;
+        display: block !important;
+    }
+
+.magazine-block {
+    float: left;
+    width: 160px;
+    text-align: left;
+    padding: 5px 15px;
+    color: #fff;
+}
+
+    .magazine-block h2 {
+        color: #fff;
+        margin-top: 0px;
+    }
+
+    .magazine-block img {
+        margin-bottom: 5px;
+        border: 1px solid #eee;
+    }
+
+    .magazine-block a {
+        color: #fff;
+        display: inline !important;
+        padding: 0px !important;
+    }
+
+        .magazine-block a:hover {
+            text-decoration: underline !important;
+        }
+
+.magazine-alt {
+    float: left !important;
+    width: 100px !important;
+    text-align: left !important;
+    min-width: 166px !important;
+    padding: 0px 0 !important;
+    margin: 2px 0 0 !important;
+    font-size: 14px !important;
+    list-style: none !important;
+}
+
+    .magazine-alt li {
+        width: 100% !important;
+    }
+
+.sidr .magazine-block {
+    float: none;
+    width: 100%;
+    padding-left: 30px;
+}
+
+    .sidr .magazine-block h2 {
+        background-image: none;
+        box-shadow: none;
+        font-size: 14px;
+        padding-left: 0px !important;
+    }
+
+    .sidr .magazine-block img {
+        max-width: 80px;
+    }
+
+.sidr .magazine-alt {
+    float: none !important;
+    width: 100% !important;
+    min-width: inherit !important;
+}
+
+.sidr .btn-search {
+    color: #000;
+    padding-bottom: 10px;
+}

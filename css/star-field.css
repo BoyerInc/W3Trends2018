@@ -1,0 +1,201 @@
+﻿@keyframes starfieldRotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.star-wrap {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background: #01000E;
+}
+
+.starfield {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative
+}
+
+    .starfield > span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-size: 250px 250px;
+        background-image: 
+            radial-gradient( 3px 3px at 40px 60px, #ccc, rgba(0, 0, 0, 0) ), 
+            radial-gradient(2px 2px at 20px 30px, #ddd, rgba(0, 0, 0, 0)), 
+            radial-gradient(1px 1px at 30px 100px, #eee, rgba(0, 0, 0, 0)), 
+            radial-gradient(2px 2px at 60px 40px, #fff, rgba(0, 0, 0, 0)), 
+            radial-gradient(2px 2px at 110px 90px, #ccc, rgba(0, 0, 0, 0)), 
+            radial-gradient(4px 4px at 150px 190px, #ddd, rgba(0, 0, 0, 0)), 
+            radial-gradient(2px 2px at 90px 123px, #ddd, rgba(0, 0, 0, 0)), 
+            radial-gradient(1px 1px at 200px 25px, #ddd, rgba(0, 0, 0, 0));
+        background-repeat: repeat;
+        
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-name: starfieldRotate
+    }
+
+    .starfield > *:nth-child(1) {
+        animation-duration: 55s;
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+
+    .starfield > *:nth-child(2) {
+        animation-duration: 105s;
+        -webkit-transform: rotate(20deg);
+        transform: rotate(20deg);
+    }
+
+    .starfield > *:nth-child(3) {
+        animation-duration: 115s;
+        -webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
+    }
+
+    .starfield > *:nth-child(4) {
+        animation-duration: 102s;
+        -webkit-transform: rotate(40deg);
+        transform: rotate(40deg);
+    }
+
+    .starfield > *:nth-child(5) {
+        animation-duration: 250s;
+        -webkit-transform: rotate(50deg);
+        transform: rotate(50deg);
+    }
+
+        .starfield > *:nth-child(6) {
+            animation-duration: 130s;
+        }
+
+        .starfield > *:nth-child(7) {
+            animation-duration: 110s;
+        }
+
+        .starfield > *:nth-child(8) {
+            animation-duration: 200s;
+        }
+
+        .starfield > *:nth-child(9) {
+            animation-duration: 225s;
+        }
+
+        .starfield > *:nth-child(10) {
+            animation-duration: 400s;
+        }
+
+        .starfield > *:nth-child(11) {
+            animation-duration: 0s;
+        }
+
+
+@keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@-webkit-keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@-moz-keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@-ms-keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@keyframes move-clouds-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 10000px 0;
+    }
+}
+
+@-webkit-keyframes move-clouds-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 10000px 0;
+    }
+}
+
+@-moz-keyframes move-clouds-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 10000px 0;
+    }
+}
+
+@-ms-keyframes move-clouds-back {
+    from {
+        background-position: 0;
+    }
+
+    to {
+        background-position: 10000px 0;
+    }
+}
+
+.twinkling {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+    z-index: 1;
+    -moz-animation: move-twink-back 400s linear infinite;
+    -ms-animation: move-twink-back 400s linear infinite;
+    -o-animation: move-twink-back 400s linear infinite;
+    -webkit-animation: move-twink-back 400s linear infinite;
+    animation: move-twink-back 400s linear infinite;
+}
+
