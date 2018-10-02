@@ -5,7 +5,6 @@
 </script>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headContent" Runat="Server">
-
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="bodyContent" Runat="Server">   
     <header class="about-us header">
@@ -21,14 +20,14 @@
             <div class="row">
                 <div class="row col-sm-6 col-sm-push-6 case-study-overview">
                     <div class="col-sm-12"> 
-                    <h4>Objective:</h4>
-                    <p>Blow the man down poop deck crack Jennys tea cup furl parrel case shot man-of-war splice the main brace bring a spring upon her cable loaded to the gunwalls. </p>
+                        <h4>Objective:</h4>
+                        <p>Blow the man down poop deck crack Jennys tea cup furl parrel case shot man-of-war splice the main brace bring a spring upon her cable loaded to the gunwalls. </p>
                     </div>
                     <div class="col-sm-12">
                         <h4>Services Provided:</h4>
                         <p>Marketing, Design, Development</p>
                         <h4>Link:</h4>
-                        <a href="">www.linkyolivesite.com</a>
+                        <a href="*" target="_blank">www.linkyolivesite.com</a>
                     </div>
                 </div>
                 <div class="col-sm-6 col-sm-pull-6 case-study-logo-wrap">

@@ -26,9 +26,10 @@
     <section>
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 contact-overview">
-                        <h3 class="hvr-pop">Hello Stranger</h3>
-                        <p>Want to ask a question? Talk about basketball? Talk to us below.</p>
+                    <div class="col-sm-12 contact-overview text-center">
+                        <h3 class="hvr-pop">Request a Free Consultation</h3>
+                        <hr />
+                        <p>Thank you for your interest in W3trends. Please fill out the form below or call us for your free consultation</p>
                     </div>
                 </div>
                 <form>

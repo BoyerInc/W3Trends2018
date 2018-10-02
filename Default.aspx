@@ -50,7 +50,7 @@
         <section id="partner-logos">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><img src="img/CAT-logo.png" class="img-responsive banner-logos hvr-float hvr-color-out"/></div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><img src="img/wo-logo.png" class="img-responsive banner-logos hvr-float hvr-color-out"/></div>
                     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><img src="img/CAT-logo.png" class="img-responsive banner-logos hvr-float hvr-color-out"/></div>
                     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><img src="img/CAT-logo.png" class="img-responsive banner-logos hvr-float hvr-color-out"/></div>
                     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><img src="img/CAT-logo.png" class="img-responsive banner-logos hvr-float hvr-color-out"/></div>
@@ -78,38 +78,53 @@
             </div>
         </section>
         <section class="recent-projects">
-            <div class="flex-container">
-                <div class="row">
-                        <div class="col-lg-8 col-md-12 row">
-                            <div class="col-lg-6 col-md-6 col-sm-6 project-bg-img-1 project-bg block-left">   
-                                <div class="red-opacity-overlay">
-                                    <h3 class="project-title ">Lorem Ipseum</h3>
-                                </div>
-                            </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 project-bg-img-2 project-bg block-left">
-                                <div class="red-opacity-overlay">
-                                    <h3 class="project-title ">Lorem Ipseum</h3>
-                                </div>
+            <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-12">
+                            <div class="row">
+                                <a href="world-oil-case-study.aspx">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 project-bg-img-1 project-bg block-left">   
+                                        <div class="red-opacity-overlay">
+                                            <h3 class="project-title ">World Oil</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="*">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 project-bg-img-2 project-bg block-left">   
+                                        <div class="red-opacity-overlay">
+                                            <h3 class="project-title ">Lorem Ipseum</h3>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
-
-                    <div class="col-lg-4 col-md-12 row">
-                 
-                        <div class="col-lg-6 col-md-4 col-sm-6 project-bg-img-4 project-bg block-right">                        
-                            <div class="red-opacity-overlay">
-                                <h3 class="project-title ">Lorem Ipseum</h3>
-                            </div></div>
-                        <div class="col-lg-6 col-md-4 col-sm-6 project-bg-img-5 project-bg block-right">                        
-                            <div class="red-opacity-overlay">
-                                <h3 class="project-title ">Lorem Ipseum</h3>
-                            </div></div>
-                        <div class="col-lg-12 col-md-4 col-sm-12 project-bg-img-6 project-bg block-right">                        
-                            <div class="red-opacity-overlay">
-                                <h3 class="project-title ">Lorem Ipseum</h3>
-                            </div></div>                
+                        <div class="col-lg-4 col-md-12">
+                            <div class="row">
+                                <a href="*">
+                                    <div class="col-lg-6 col-md-4 col-sm-6 project-bg-img-4 project-bg block-right">
+                                        <div class="red-opacity-overlay">
+                                            <h3 class="project-title ">Lorem Ipseum</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="*">
+                                    <div class="col-lg-6 col-md-4 col-sm-6 project-bg-img-5 project-bg block-right">
+                                        <div class="red-opacity-overlay">
+                                            <h3 class="project-title ">Lorem Ipseum</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="*">
+                                    <div class="col-lg-12 col-md-4 col-sm-12 project-bg-img-6 project-bg block-right">
+                                        <div class="red-opacity-overlay">
+                                            <h3 class="project-title ">Lorem Ipseum</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
         </section>
         <section id="home-services-overview">
             <div class="container">

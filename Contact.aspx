@@ -27,7 +27,7 @@
             </div>
             <div class="row">
                 <div class="col-md-6 col-sm-6 form-wrap">
-                    <form>
+                    <form action="*" target="_blank">
                         <div class="form-row">
                             <div class="col-md-6 col-sm-12 input-wrap">
                                 <label for="" class="hvr-shrink">First name</label>
