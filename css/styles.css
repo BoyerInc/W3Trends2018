@@ -57,7 +57,6 @@ header {
     width: 100%;
     padding-top: 17px;
     background: none;
-    overflow: hidden;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     opacity: 0;
@@ -65,21 +64,6 @@ header {
     padding-bottom: 6px;
     font-family: "Montserrat", sans-serif;
 }
-
-@media only screen and (max-width: 766px) {
-    .main_h {
-        padding-top: 25px;
-    }
-}
-
-.open-nav {
-    max-height: 400px !important;
-}
-
-    .open-nav .mobile-toggle {
-        transform: rotate(-90deg);
-        -webkit-transform: rotate(-90deg);
-    }
 
 .sticky {
     background-color: rgba(0, 0, 0, 0.93);
@@ -123,8 +107,15 @@ nav ul {
     overflow: hidden;
     text-align: right;
     float: right;
-    padding-left:0px;
-    margin-top:5px;
+    padding-left: 0px;
+    margin-top: 5px;
+    display: none;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+}
+nav.mobile-navigation ul {
+    display:block;
 }
 
 @media only screen and (max-width: 766px) {
@@ -134,6 +125,7 @@ nav ul {
         float: left;
         text-align: center;
         width: 100%;
+
     }
 }
 
@@ -160,17 +152,67 @@ nav ul a {
         color: #b10000
     }
 
+
 .mobile-toggle {
-    display: none;
+    height: 40px;
+    width: 40px;
+    display: block;
+    border: 1px solid #777;
     cursor: pointer;
+    display: none;
     font-size: 20px;
     position: absolute;
     right: 22px;
     top: 0;
-    width: 30px;
     -webkit-transition: all 200ms ease-in;
     -moz-transition: all 200ms ease-in;
     transition: all 200ms ease-in;
+    z-index: 9999999999999;
+}
+
+.mobile-toggle span,
+.mobile-toggle span:before,
+.mobile-toggle span:after {
+  height: 4px;
+  width: 30px;
+  background-color: #777;
+  position: absolute;
+  display: block;
+}
+
+.mobile-toggle span {
+  top: 50%;
+  left: 4px;
+  margin-top: -2px;
+  transition: background-color .3s;
+}
+
+.mobile-toggle span:before {
+  content: '';
+  top: -8px;
+  transition: top .3s;
+}
+
+.mobile-toggle span:after {
+  content: '';
+  top: 8px;
+  transition: top .3s;
+}
+
+.mobile-toggle.active span {
+  background-color: transparent;
+}
+
+.mobile-toggle.active span:before {
+  transform: rotate(45deg);
+  top: 0;
+  transition: transform .3s;
+}
+
+.mobile-toggle.active span:after {
+  transform: rotate(-45deg);
+  top: 0;
+  transition: transform .3s;
 }
 
 @media only screen and (max-width: 766px) {
@@ -179,13 +221,9 @@ nav ul a {
     }
 }
 
-.mobile-toggle span {
-    width: 30px;
-    height: 4px;
-    margin-bottom: 6px;
-    border-radius: 1000px;
-    background: #8f8f8f;
-    display: block;
+.navigation {
+    opacity:0;
+    transition: all 0.5s ease;
 }
 
 /* Caption */
@@ -203,9 +241,33 @@ nav ul a {
 
 
 
+/* Mobile Nav */
 
+.mobile-navigation {
+    background-color: black;
+    display: block;
+    opacity: 1;
+    height: 100vh;
+    width: 100%;
+    z-index: 9999999999;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s ease;
+}
 
+    .mobile-navigation .navigation {
+        display:block !important;
+    }
 
+    .mobile-navigation ul a {
+        font-size: 30px;
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
 
 /* Color Styles */
 .bg-red{ background-color:#ff0000;}
@@ -562,7 +624,8 @@ a:focus, a:hover {
 }
 .employees{
     background-color: #111111;
-    padding: 2em 0;
+    padding: 50px;
+    color:white;
 }
 .employee-card h4{
     font-size: 0.95em;
@@ -611,8 +674,12 @@ a:focus, a:hover {
     .block-right { height: 300px; }
     .mobile-hide { display: block; }
     .mac-computer { background-size: 450px auto; }
+    nav ul {display:block;}
     .recent-projects-txtFlex {
         padding-top: 0px;
+    }
+    .navigation {
+        opacity:1;
     }
     .w3-title-wrap h1 { font-size: 8vw; }
 }

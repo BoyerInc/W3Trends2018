@@ -66,11 +66,11 @@
     <section>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-6 text-center bg-grey">
+                <div class="col-sm-6 text-center bg-grey p50">
                    <h3>Our Values</h3>
                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                 </div>
-                <div class="col-sm-6 text-center bg-dark-grey">
+                <div class="col-sm-6 text-center bg-dark-grey p50">
                    <h3>Our Mission</h3>
                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                </div>

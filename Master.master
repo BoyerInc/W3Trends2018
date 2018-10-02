@@ -28,6 +28,16 @@
     <script src="/js/header.js"></script>
     <asp:ContentPlaceHolder id="headContent" runat="server">
     </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $(".mobile-toggle").click(function () {
+                $(".navigation").toggleClass("mobile-navigation");
+                $(this).toggleClass('active');
+            });
+        });
+        
+    </script>
 </head>
 <body>
     <header class="main_h" id="header">
@@ -35,13 +45,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <a class="logo" href="/"><span class="red">W3</span>Trends</a>
-                    <div class="mobile-toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-
-                    <nav>
+                    <nav class="navigation">
                         <ul>
                             <li><a href="#">Services</a></li>
                             <li><a href="/portfolio.aspx">Portfolio</a></li>
@@ -49,6 +53,9 @@
                             <li><a href="/contact.aspx">Contact</a></li>
                         </ul>
                     </nav>
+                    <div class="mobile-toggle">
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </div>
