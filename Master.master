@@ -1,4 +1,4 @@
-﻿<%@ Master Language="VB" CodeFile="Master.master.vb" Inherits="Master" %>
+﻿<%@ Master Language="VB" %>
 
 <!DOCTYPE html>
 
