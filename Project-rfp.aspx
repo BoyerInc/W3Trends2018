@@ -6,60 +6,82 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headContent" Runat="Server">
 
+    <!-- include the jQuery and jQuery UI scripts -->
+<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+                
+<!-- plus a jQuery UI theme, here I use "flick" -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/flick/jquery-ui.css">
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="bodyContent" Runat="Server">
-    <header>
-    </header> 
-    <div class="main-wrap">
-    <section>
-        <div class="container">
-        <form>
-            <div class="form-row">
-                <div class="col-sm-6">
-                    <label for="validationCustom01">First name</label>
-                    <input type="text" class="form-control" placeholder="First name">
-                </div>
-                <div class="col-sm-6">
-                    <label for="validationCustom01">Last name</label>
-                    <input type="text" class="form-control" placeholder="Last name">
-                </div>
+        <header class="about-us header">
+        <div>
+            <div class="header-title-wrap">
+                <h1>Company We Worked W/ Name</h1>
+                <h2>Case Study</h2>
             </div>
-            <div class="form-row">
-                <div class="col-sm-6">
-                    <label for="validationCustom01">Phone</label>
-                    <input type="tel" class="form-control" placeholder="(555)-555-5555">
-                </div>
-                <div class="col-sm-6">
-                    <label for="validationCustom01">Email</label>
-                    <input type="email" class="form-control" placeholder="bob@email.com">
-                </div>
-            </div>
-            <div class="form-row">
-                  <div class="col-sm-6">
-                    <label for="validationCustom01">Company Name</label>
-                    <input type="text" class="form-control" placeholder="First name">
-                </div>
-                <div class="col-sm-6">
-                    <label for="validationCustom01">Website URL</label>
-                    <input type="url" class="form-control" placeholder="Last name">
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="col-sm-12">
-                <label for="">Time table</label>
-                <input type="range" class="custom-range" min="1" max="12">
-                <label for="">Project Budget</label>
-                <input type="range" class="custom-range" min="0" max="5">
-                </div>
-            </div>
-            <div class="form-group col-sm-12">
-                <label for="exampleFormControlTextarea1">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-        </form>
         </div>
+    </header>
+    <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 contact-overview">
+                        <h3 class="hvr-pop">Hello Stranger</h3>
+                        <p>Want to ask a question? Talk about basketball? Talk to us below.</p>
+                    </div>
+                </div>
+                <form>
+                    <div class="form-row">
+                        <div class="col-md-6 col-sm-12 form-group">
+                            <label for="" class="hvr-shrink">First name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-md-6 col-sm-12 form-group">
+                            <label for="" class="hvr-shrink">Last name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 col-sm-12 form-group">
+                            <label for="" class="hvr-shrink">Phone</label>
+                            <input type="tel" class="form-control" >
+                        </div>
+                        <div class="col-md-6 col-sm-12 form-group">
+                            <label for="" class="hvr-shrink">Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 col-sm-12 form-group">
+                            <label for="" class="hvr-shrink">Website URL</label>
+                            <input type="text" class="form-control" >
+                        </div>
+                        <div class="col-md-6 col-sm-12 form-group">
+                            <label for="" class="hvr-shrink">Company Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-sm-12 form-group">
+                            <label for="">Time table</label>
+                            <input type="range" class="custom-range" min="1" max="12">
+                        </div>
+                        <div class="col-sm-12 form-group">
+                            <label for="">Project Budget</label>
+                            <input type="range" class="custom-range" min="0" max="5">
+                        </div>  
+                    </div>
+                    <div class="form-group col-sm-12 form-group">
+                        <label for="text-area" class="hvr-shrink">Question</label>
+                        <textarea class="form-control" id="text-area" rows="3"></textarea>
+                    </div>
+                    <div class="form-group col-sm-12 form-groupc">
+                        <button type="submit" class=" btn-lg btn-block btn hvr-fade hvr-reveal">Submit</button>
+                    </div>
+                </form>
+            </div>
     </section>
-    </div>
     <section>
 
     </section>
